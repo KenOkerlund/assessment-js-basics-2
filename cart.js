@@ -33,8 +33,7 @@ const cart = [
     }
 ]
 
-//CODE HERE
-
+// I think this wants us to write inside the brackets only?
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 

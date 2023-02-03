@@ -30,7 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+const pizza = {
+    name: 'Cheese',
+    price: 10.99,
+    category: 'Entree',
+    popularity: 7,
+    rating: 8,
+    tags: ['kid-friendly', 'karen-approved', 'practically cardboard']
+}
 
 
 
@@ -42,7 +49,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log(pizza.popularity);
 
 
 /*
@@ -52,7 +59,7 @@
     get the value.
 */
 
-//CODE HERE
+console.log(pizza.tags[1]);
 
 
 /*
@@ -62,7 +69,8 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+const {price} = pizza;
+console.log(price);
 
 
 /*
@@ -72,7 +80,8 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
+const {category} = pizza;
+console.log(category);
 
 
 //////////////////PROBLEM 3////////////////////
@@ -87,7 +96,48 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
+const foodArr = [
+    {
+        name: 'Cheese Pizza',
+        price: 10.99,
+        category: 'Entree',
+        popularity: 7,
+        rating: 8,
+        tags: ['kid-friendly', 'karen-approved', 'practically cardboard']
+    },
+    {
+        name: 'Chicken Nuggets',
+        price: 3.99,
+        category: 'Appetizer',
+        popularity: 9,
+        rating: 5,
+        tags: ['Bite sized', 'kid-friendly', 'karen-unnaproved']
+    },
+    {
+        name: 'Water',
+        price: 0,
+        category: 'Required',
+        popularity: 3,
+        rating: 10,
+        tags: ['Giving of life!', 'Nourishing', 'Elixir']
+    },
+    {
+        name: 'Icecream',
+        price: 2.99,
+        category: 'Liquid',
+        popularity: 7,
+        rating: 8,
+        tags: ['Solid', 'Liquid', 'Cold']
+    },
+    {
+        name: 'ravioli',
+        price: 8.99,
+        category: 'Soup',
+        popularity: 8,
+        rating: 9,
+        tags: ['Messy', 'First-date approved', 'noisy']
+    }
+]
 
 
 
@@ -103,9 +153,20 @@
     your food objects has.
 */
 
-//CODE HERE
+///////////////////////////////////////////////////////////////////////THIS ONE AND BELOW HOMIEEEEEEEE///////////////////////////////////////
+// function getTheFood([...tag]){
+//     for(let i = 0; i < foodArr.length; i++){
+//         if (foodArr[i].tags.includes(tag)){
+//             return foodArr[i];
+//         }
+//     }
+// }
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+// console.log(getTheFood('karen-approved'));
+
+let {tags: tag} = foodArr;
+console.log(tag);
+// const filteredFood = foodArr.filter(getTheFood('karen-approved'))
 
 
 
