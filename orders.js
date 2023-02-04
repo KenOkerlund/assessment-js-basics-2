@@ -29,7 +29,18 @@
     stored on the object.
 */
 
-//CODE HERE
+class Ticket {
+    constructor(items, orderTime, customerId){
+        this.items = items;
+        this.orderTime = orderTime;
+        this.customerId = customerId;
+        this.status = 'queued';
+    }
+    updateStatus(newStatus){
+        this.status = newStatus;
+        console.log(`The order for customer ${this.customerId} is now ${this.status}`)
+    }
+}
 
 
 
@@ -44,7 +55,8 @@
     customer: 575
 */
 
-//CODE HERE
+// I'm using military time without a ':' because I wanted to visualize this as a number instead of a string.
+const firstTicket = new Ticket('pizza, bread, soda', 1903, 575);
 
 
 /*
@@ -53,4 +65,4 @@
     'cooking'
 */
 
-//CODE HERE
+firstTicket.updateStatus('cooking');

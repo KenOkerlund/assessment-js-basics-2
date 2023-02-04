@@ -40,7 +40,6 @@ const pizza = {
 }
 
 
-
 //////////////////PROBLEM 2////////////////////
 /* 
     Let's print a few values from our pizza object.
@@ -154,20 +153,10 @@ const foodArr = [
 */
 
 ///////////////////////////////////////////////////////////////////////THIS ONE AND BELOW HOMIEEEEEEEE///////////////////////////////////////
-// function getTheFood([...tag]){
-//     for(let i = 0; i < foodArr.length; i++){
-//         if (foodArr[i].tags.includes(tag)){
-//             return foodArr[i];
-//         }
-//     }
-// }
 
-// console.log(getTheFood('karen-approved'));
-
-let {tags: tag} = foodArr;
-console.log(tag);
-// const filteredFood = foodArr.filter(getTheFood('karen-approved'))
-
+// do a filter that filters the foods for the tags and see if it includes a t
+const findTags =  foodArr.filter(food => food.tags.includes("First-date approved"));
+console.log(findTags)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -209,7 +198,17 @@ console.log(tag);
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+const filterByProperty = (property, number, type) => {
+    const filteredArr = foodArr.filter(food => {
+        if(type === 'above'){
+            return food[property] > number;
+        }
+        if(type === 'below'){
+            return food[property] < number;
+        }
+    })
+    return filteredArr;
+}
 
 
 /*
@@ -219,4 +218,4 @@ console.log(tag);
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+console.log(filterByProperty('popularity', 7, 'above'));

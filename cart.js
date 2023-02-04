@@ -33,9 +33,9 @@ const cart = [
     }
 ]
 
-// I think this wants us to write inside the brackets only?
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
+const summedPrice = cart.reduce((total, food) => total + food.price, 0)
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -52,8 +52,10 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
-
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    const taxedValue = tax * cartTotal;
+    return (cartTotal + taxedValue) - couponValue;
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -77,7 +79,12 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+    1. Customer Id to have as primary key if linked to database
+    2. Customer first name for general 
+    3. Customer last name for general info
+    4. Customer email for contact
+    5. Customer address for knowing ranges of stores within customer area
+    6. Customer phone number for rewards tracking
 
 */
 
@@ -86,4 +93,11 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+const customer = {
+    customerId: 1,
+    firstName: 'Ken',
+    lastName: 'Okerlund',
+    email: 'ken@404.org',
+    address: '221B Baker Street',
+    phoneNumber: '555-0123'
+  };

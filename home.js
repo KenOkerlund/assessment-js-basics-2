@@ -24,9 +24,6 @@
 const greetUser = username => `Welcome back, ${username}`;
 
 
-
-
-
 //////////////////PROBLEM 2////////////////////
 /* 
     Below is an array of zip codes that are in
@@ -50,8 +47,6 @@ const greetUser = username => `Welcome back, ${username}`;
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 const canWeDeliver = zip => deliveryAreaZipCodes.includes(zip) ? `You're in our delivery zone!` : `Sorry, we can't deliver to that address`;
-
-
 
 
 /* 
@@ -79,6 +74,7 @@ const canWeDeliverTwo = zip => {
     }
     return `Sorry, we can't deliver to that address`;
 }
+
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -115,7 +111,6 @@ const deals = [
 
 
 deals[0].title = deals[0].title.replace("15% Off!", "10% Off!");
-
 
 
 /*
