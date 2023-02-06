@@ -80,7 +80,7 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 
 /*
     1. Customer Id to have as primary key if linked to database
-    2. Customer first name for general 
+    2. Customer first name for general info
     3. Customer last name for general info
     4. Customer email for contact
     5. Customer address for knowing ranges of stores within customer area

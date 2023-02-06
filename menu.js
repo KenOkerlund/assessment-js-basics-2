@@ -152,10 +152,7 @@ const foodArr = [
     your food objects has.
 */
 
-///////////////////////////////////////////////////////////////////////THIS ONE AND BELOW HOMIEEEEEEEE///////////////////////////////////////
-
-// do a filter that filters the foods for the tags and see if it includes a t
-const findTags =  foodArr.filter(food => food.tags.includes("First-date approved"));
+const findTags =  foodArr.filter(food => food.tags.includes('First-date approved'));
 console.log(findTags)
 
 
